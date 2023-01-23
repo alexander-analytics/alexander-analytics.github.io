@@ -1,9 +1,3 @@
-gtag('event','read_article', {
-    "author":"Lorem P",
-    "title":"Lorem Ipsum",
-    "number_of_pages":1,
-})
-
 # alexander-analytics.github.io
 
 Welcome to my website! Hope the trip here was pleasent. 
