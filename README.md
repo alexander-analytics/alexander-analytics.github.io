@@ -6,3 +6,8 @@ For the moment I am om my first year and I am about to graduate june 2024.
 I have for a couple of years been interested in marketing and I want to contribute more to the digital market we 
 have today so that is why I started to study as a Digital Analytics Specialist. 
 
+[About](/about)
+
+[Read more](/read more)/)
+
+[Articles](/articles)
