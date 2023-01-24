@@ -8,6 +8,6 @@ have today so that is why I started to study as a Digital Analytics Specialist.
 
 [About](/about)
 
-[Read more](/read more)/)
+[Read more](/read-more)
 
 [Articles](/articles)
