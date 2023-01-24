@@ -7,3 +7,30 @@
 
   gtag('config', 'G-9249NJH452');
 </script>
+
+<script>
+function sendReadEvent(title, numberOfCharacters){
+    gtag('event','read_article', {
+        "author":"C Alexander",
+        "title":"Article 1",
+        "number_of_characters":50,
+    });    
+}
+
+document.addEventListener("DOMContentLoaded",() => {
+document.getElementById("read-article-1").addEventListener("click", () => {
+sendReadEvent("Article 1", 50)
+})
+
+document.getElementById("read-article-2").addEventListener("click", () => {
+    sendReadEvent("Article 2", 100)
+    })
+
+    document.getElementById("read-article-3").addEventListener("click", () => {
+        sendReadEvent("Article 3", 150)
+        })
+
+});
+  
+  console.log("2023-01-24")
+</script>
