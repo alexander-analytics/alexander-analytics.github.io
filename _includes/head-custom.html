@@ -11,7 +11,7 @@
 <script>
 function sendReadEvent(title, numberOfCharacters){
     gtag('event','read_article', {
-        "author":"C Alexander",
+        "author":"author",
         "title":"Article 1",
         "number_of_characters":50,
     });    
@@ -23,15 +23,15 @@ document.addEventListener("DOMContentLoaded",() => {
 if(readArticle1button){
 
 document.getElementById("read-article-1").addEventListener("click", () => {
-sendReadEvent("Article 1", 50)
+sendReadEvent("Article 1", 50, "C Alexander")
 })
 
 document.getElementById("read-article-2").addEventListener("click", () => {
-    sendReadEvent("Article 2", 100)
+    sendReadEvent("Article 2", 100, "Bianca WD")
     })
 
     document.getElementById("read-article-3").addEventListener("click", () => {
-        sendReadEvent("Article 3", 150)
+        sendReadEvent("Article 3", 150, "Sander P")
         })
 }
   
