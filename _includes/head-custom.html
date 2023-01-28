@@ -14,26 +14,28 @@ function sendReadEvent(title, numberOfCharacters, author) {
         "author": author,
         "title": title,
         "number_of_characters": numberOfCharacters,
-    });    
-
-
-document.addEventListener("DOMContentLoaded",() => {
-    const readArticle1Button = document.getElementById("read-article-1"); 
-
-
-  if(readArticle1Button){
-
- readArticle1Button.addEventListener("click", () => {
-sendReadEvent("Article 1", 50, "C Alexander")
-})
-
-document.getElementById("read-article-2").addEventListener("click", () => {
-    sendReadEvent("Article 2", 100, "Bianca WD")
-    })
-
-    document.getElementById("read-article-3").addEventListener("click", () => {
-        sendReadEvent("Article 3", 150, "Sander P")
-        })
+    });
 }
-  
-</script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const readArticle1Button = document.getElementById("read-article-1");
+
+    if (readArticle1Button) {
+        // Skickar event vid klick på artikel 1
+        readArticle1Button.addEventListener("click", () => {
+            sendReadEvent("Article 1", 50, "C Alexander")
+        });
+
+        // Skickar event vid klick på artikel 2
+        document.getElementById("read-article-2").addEventListener("click", () => {
+            sendReadEvent("Article 2", 100, "Bianca WD")
+        });
+
+        // Skickar event vid klick på artikel 3
+        document.getElementById("read-article-3").addEventListener("click", () => {
+            sendReadEvent("Article 3", 150, "Sander P")
+        });
+    }
+
+});
