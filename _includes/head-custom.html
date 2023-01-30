@@ -9,32 +9,32 @@
 </script>
 
 <script>
-function sendReadEvent(title, numberOfCharacters, author) {
-    gtag('event', 'read_article', {
-        "author": author,
-        "title": title,
-        "number_of_characters": numberOfCharacters,
+function skickaLashandelse(titel, lastid, artikelnamn) {
+    gtag('event', 'last_artikel', {
+        "artikelnamn": artikelnamn,
+        "titel": titel,
+        "lastid": lastid,
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const readArticle1Button = document.getElementById("read-article-1");
+    const lasArtikel1Knapp = document.getElementById("las-artikel-1");
 
-    if (readArticle1Button) {
+    if (lasArtikel1Knapp) {
         // Skickar event vid klick på artikel 1
-        readArticle1Button.addEventListener("click", () => {
-            sendReadEvent("Article 1", 50, "C Alexander")
+        lasArtikel1Knapp.addEventListener("click", () => {
+            skickaLashandelse("Artikel 1", 50, "C Alexander")
         });
 
         // Skickar event vid klick på artikel 2
-        document.getElementById("read-article-2").addEventListener("click", () => {
-            sendReadEvent("Article 2", 100, "Bianca WD")
+        document.getElementById("las-artikel-2").addEventListener("click", () => {
+            skickaLashandelse("Artikel 2", 100, "Bianca WD")
         });
 
         // Skickar event vid klick på artikel 3
-        document.getElementById("read-article-3").addEventListener("click", () => {
-            sendReadEvent("Article 3", 150, "Sander P")
+        document.getElementById("las-artikel-3").addEventListener("click", () => {
+            skickaLashandelse("Artikel 3", 150, "Sander P")
         });
     }
 
