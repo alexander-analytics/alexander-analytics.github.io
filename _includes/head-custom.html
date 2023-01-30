@@ -22,17 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastArtikel1Knapp = document.getElementById("last-artikel-1");
 
     if (lastArtikel1Knapp) {
-        // Skickar event vid klick på artikel 1
         lastArtikel1Knapp.addEventListener("click", () => {
             skickaLashandelse("Artikel 1", 50, "C Alexander")
         });
 
-        // Skickar event vid klick på artikel 2
         document.getElementById("last-artikel-2").addEventListener("click", () => {
             skickaLashandelse("Artikel 2", 100, "Bianca WD")
         });
 
-        // Skickar event vid klick på artikel 3
         document.getElementById("last-artikel-3").addEventListener("click", () => {
             skickaLashandelse("Artikel 3", 150, "Sander P")
         });
