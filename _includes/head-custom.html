@@ -19,21 +19,21 @@ function skickaLashandelse(titel, lastid, artikelnamn) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const lasArtikel1Knapp = document.getElementById("las-artikel-1");
+    const lastArtikel1Knapp = document.getElementById("last-artikel-1");
 
-    if (lasArtikel1Knapp) {
+    if (lastArtikel1Knapp) {
         // Skickar event vid klick på artikel 1
-        lasArtikel1Knapp.addEventListener("click", () => {
+        lastArtikel1Knapp.addEventListener("click", () => {
             skickaLashandelse("Artikel 1", 50, "C Alexander")
         });
 
         // Skickar event vid klick på artikel 2
-        document.getElementById("las-artikel-2").addEventListener("click", () => {
+        document.getElementById("last-artikel-2").addEventListener("click", () => {
             skickaLashandelse("Artikel 2", 100, "Bianca WD")
         });
 
         // Skickar event vid klick på artikel 3
-        document.getElementById("las-artikel-3").addEventListener("click", () => {
+        document.getElementById("last-artikel-3").addEventListener("click", () => {
             skickaLashandelse("Artikel 3", 150, "Sander P")
         });
     }
